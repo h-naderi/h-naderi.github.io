@@ -6,12 +6,11 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: HotelProfile.jpg
+  image: StageProfile.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Floor 4th</p>
-    <p>Bishop-Favrao Hall, Perry St,</p>
-    <p>Blacksburg, VA 24060</p>
+    <p>Myers Lawson School of Construction</p>
+    <p>Blacksburg, VA</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
