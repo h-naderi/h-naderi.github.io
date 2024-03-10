@@ -6,7 +6,7 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: StageProfile.jpg
+  image: StageProfile.jpeg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Myers Lawson School of Construction</p>
