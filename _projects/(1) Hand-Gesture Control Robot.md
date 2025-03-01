@@ -1,7 +1,7 @@
 ---
 name: Hand Gesture Control of Quadrupped Robot
 tools: [ROS2, Python, C++, Quadruped, Computer Vision, MediaPipe]
-image: https://h-naderi.github.io/assets/1-hand-gesture.gif
+image: /assets/1-hand-gesture.gif
 description: Controling the Unitree Go2 robot via hand gestures.
 ---
 
@@ -36,11 +36,13 @@ The system follows these steps:
 
 ## **Hand Gesture Recognition**
 The system uses **MediaPipe** to detect and analyze hand gestures. Each frame from the robot’s front camera is processed in real-time to identify hand landmarks and classify gestures.
-
+<br>
+<br>
 <div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-3PersonView.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-front-camera.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
 </div>
-
+<br>
+<br>
 The gesture recognition model specifically detects the position of the **thumb** to differentiate between two commands:
 
 - **Thumbs Up** → The robot stands up.
@@ -50,11 +52,13 @@ The gesture recognition model specifically detects the position of the **thumb**
 
 ## **Real-Time Testing**
 The following video demonstrates the system in action, where the robot responds to hand gestures in real time.
+<br>
+<br>
 
 <div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-front-camera.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-3PersonView.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
 </div>
-
+<br>
 <br>
 
 ## **Code Overview**
