@@ -1,7 +1,7 @@
 ---
 name: Hand Gesture Control of Quadrupped Robot
 tools: [ROS2, Python, C++, Quadruped, Computer Vision, MediaPipe]
-image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/1-hand-gesture-intro.gif
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/1-hand-gesture-intro.gif?raw=true
 description: Controling the Unitree Go2 robot via hand gestures.
 ---
 
