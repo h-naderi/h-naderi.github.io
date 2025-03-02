@@ -1,8 +1,8 @@
 ---
-name: The Movies Project
-tools: [C#, XML, WPF]
-image: https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png
-description: This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!
+name: SLAM for Unitree Go2 Robot
+tools: [SLAM, ROS2, Sensor Fusion, RGB Depth Camera, 3D Point Data]
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-intro.gif?raw=true
+description: Enabling SLAM on Unitree Go2 in two ways: with Lidar only, with infusion of Lidar and RGB Camera
 ---
 
 # The Movies Project
