@@ -49,14 +49,14 @@ ros:
   ros_send_packet_topic: /rslidar_packets      # Topic used to send lidar packets through ROS
   ros_send_point_cloud_topic: /rslidar_points  # Topic used to send point cloud through ROS
   ```
-## **2. RTAB-Map Installation and Configuration**
+### 2. RTAB-Map Installation and Configuration
 RTAB-Map (**Real-Time Appearance-Based Mapping**) is a **graph-based SLAM approach** that uses **visual features for loop closure detection**. We installed RTAB-Map on **ROS2** following the [official installation guide](https://github.com/introlab/rtabmap/wiki/Installation).
 
 For those who want to learn more about **RTAB-Map**, the [project's website](https://introlab.github.io/rtabmap/) provides comprehensive documentation. To understand the available **parameters** and optimize RTAB-Map usage, the [Parameters.h](https://github.com/introlab/rtabmap/blob/master/corelib/include/rtabmap/core/Parameters.h) file is an excellent resource.
 
 Using the **topics and frames** configured in the **LiDAR SDK**, we created a **launch file** to implement RTAB-Map in **two modes**:
 
-### **Localization Mode vs. Mapping Mode**
+#### **Localization Mode vs. Mapping Mode**
 Our **launch file** supports **two primary modes** of operation:
 
 - **Localization Mode (`localize_only=true`)**:  
@@ -69,7 +69,7 @@ Our **launch file** supports **two primary modes** of operation:
 
 ---
 
-### **Node Explanation**
+#### **Node Explanation**
 The **launch file** implements several important **nodes**:
 
 - **`icp_odometry`**  
@@ -98,14 +98,14 @@ The **launch file** implements several important **nodes**:
 
 ---
 
-## **3. SLAM with LiDAR and RGB-Camera Fusion**
+### 3. SLAM with LiDAR and RGB-Camera Fusion
 To improve **mapping accuracy** and enable **automatic loop closure detection**, we implemented a **sensor fusion approach** that combines **LiDAR** and **RGB-D camera data**.
 
-### **Why Use Multi-Sensor Fusion?**
+#### **Why Use Multi-Sensor Fusion?**
 - **LiDAR** provides **high-precision depth measurements** and is **less affected by lighting conditions**.
 - **RGB-D cameras** provide **visual features**, which are **essential for loop closure detection**.
 
-### **Key Differences in This Approach**
+#### **Key Differences in This Approach**
 - The **RTAB-Map node** is configured to subscribe to **both RGB and depth images**:
   ```yaml
   subscribe_depth: True
@@ -117,43 +117,34 @@ To improve **mapping accuracy** and enable **automatic loop closure detection**,
 
 ---
 
-## **Benefits of This Approach**
+#### **Benefits of This Approach**
 - **More accurate mapping** through **complementary sensor modalities**.
 - **Automatic loop closure detection** using **visual features** from the RGB camera.
 - **Improved map consistency** through **feature matching**.
 
 [Insert Image Here]
 
----
 
-## **Results and Discussion**
-The implementation of **SLAM** on the **Unitree Go2 robot** was **successful** in both **configurations**:
 
-- The **LiDAR-only approach** provided **robust mapping capabilities**.
-- The **sensor fusion approach** offered **higher accuracy** and **loop closure detection**.
-- The **generated maps** were **sufficiently accurate for navigation** and provided a **solid foundation** for implementing **higher-level robot behaviors**.
-
----
-
-## **Future Work**
+### Future Work
 This project lays the groundwork for several **future developments**:
 
-### **Integration with Navigation Stack**
+#### **Integration with Navigation Stack**
 - Implementing **autonomous navigation** using **Nav2**, enabling the robot to **navigate to specified goals**.
 
-### **Dynamic Obstacle Avoidance**
+#### **Dynamic Obstacle Avoidance**
 - Enhancing the **navigation system** to handle **moving obstacles** in the environment.
 
-### **Multi-Robot Mapping**
+#### **Multi-Robot Mapping**
 - Extending the system to support **collaborative mapping** with **multiple robots**.
 
-### **Semantic Mapping**
+#### **Semantic Mapping**
 - Adding **object recognition** to create **maps with semantic information**.
 
-### **Long-Term Autonomy**
+#### **Long-Term Autonomy**
 - Improving the system’s **robustness** for **extended operation periods**.
 
-### **Outdoor Mapping**
+#### **Outdoor Mapping**
 - Adapting the system for **outdoor environments** with **varying terrain and lighting conditions**.
 
 ---
