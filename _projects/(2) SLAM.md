@@ -59,14 +59,11 @@ ros:
   ros_send_point_cloud_topic: /rslidar_points  # Topic used to send point cloud through ROS
   ```
 ### 2. RTAB-Map Installation and Configuration
-RTAB-Map (**Real-Time Appearance-Based Mapping**) is a **graph-based SLAM approach** that uses **visual features for loop closure detection**. We installed RTAB-Map on **ROS2** following the [official installation guide](https://github.com/introlab/rtabmap/wiki/Installation).
+RTAB-Map is a **graph-based SLAM approach** that uses **visual features for loop closure detection**. We installed RTAB-Map on **ROS2** following the [official installation guide](https://github.com/introlab/rtabmap/wiki/Installation).
 
 For those who want to learn more about **RTAB-Map**, the [project's website](https://introlab.github.io/rtabmap/) provides comprehensive documentation. To understand the available **parameters** and optimize RTAB-Map usage, the [Parameters.h](https://github.com/introlab/rtabmap/blob/master/corelib/include/rtabmap/core/Parameters.h) file is an excellent resource.
 
 Using the **topics and frames** configured in the **LiDAR SDK**, we created a **launch file** to implement RTAB-Map in **two modes**:
-
-#### **Localization Mode vs. Mapping Mode**
-Our **launch file** supports **two primary modes** of operation:
 
 - **Localization Mode (`localize_only=true`)**:  
   - In this mode, the robot **uses an already created map** and does **not update** it with new sensor data.  
@@ -76,18 +73,11 @@ Our **launch file** supports **two primary modes** of operation:
   - In this mode, the robot **builds a new map** each time the node is launched.  
   - The `-d` parameter can be used to **reset any existing map**, and the `Mem/IncrementalMemory` parameter is set to **allow incremental map updates**.
 
----
-
-#### **Node Explanation**
 The **launch file** implements several important **nodes**:
 
 - **`icp_odometry`**  
   - Uses the **Iterative Closest Point (ICP) algorithm** to estimate the robot's movement based on **point cloud data**.  
   - It subscribes to the **LiDAR point cloud** and publishes **odometry information**.
-
-- **`point_cloud_assembler`**  
-  - Accumulates **point clouds** over time to create a **more complete representation** of the environment.  
-  - Useful for **mapping applications**.
 
 - **`rtabmap`**  
   - The **main SLAM node** that handles **mapping and localization** based on sensor data.
@@ -100,74 +90,44 @@ The **launch file** implements several important **nodes**:
 
 - **`static_transform_publisher`**  
   - Establishes the transformation between the **base_link** (robot base) and **base_laser** (LiDAR sensor).  
-  - This is **essential for sensor data alignment**.  
   - The `-0.2` value in the **z-axis** accounts for the height difference between the **robot’s base** and the **mounted LiDAR sensor**.
 
-[Insert Image Here]
+Note: the video in the overview section, is after running this launch file in mapping mode in the lab environment.
 
 ---
 
 ### 3. SLAM with LiDAR and RGB-Camera Fusion
 To improve **mapping accuracy** and enable **automatic loop closure detection**, we implemented a **sensor fusion approach** that combines **LiDAR** and **RGB-D camera data**.
 
-#### **Why Use Multi-Sensor Fusion?**
-- **LiDAR** provides **high-precision depth measurements** and is **less affected by lighting conditions**.
-- **RGB-D cameras** provide **visual features**, which are **essential for loop closure detection**.
-
-#### **Key Differences in This Approach**
 - The **RTAB-Map node** is configured to subscribe to **both RGB and depth images**:
   ```yaml
   subscribe_depth: True
   subscribe_rgb: True
+  ```
 
 - **Camera topics** are remapped to the actual topics published by the **Intel RealSense camera**.
 - **IMU data** is incorporated for **improved odometry estimation**.
 - The `-d` argument is used to **reset the map database** when starting a new mapping session.
 
----
 
-#### **Benefits of This Approach**
-- **More accurate mapping** through **complementary sensor modalities**.
-- **Automatic loop closure detection** using **visual features** from the RGB camera.
-- **Improved map consistency** through **feature matching**.
 
 [Insert Image Here]
 
+<br>
 
 
-### Future Work
+## **Future Work**
 This project lays the groundwork for several **future developments**:
+This project publishes odomentry data on `odom` topic, and also updates the `map`. These steps are essential for the next step in implementing **autonomous navigation** using **Nav2**, enabling the robot to navigate to specified goals.
 
-#### **Integration with Navigation Stack**
-- Implementing **autonomous navigation** using **Nav2**, enabling the robot to **navigate to specified goals**.
 
-#### **Dynamic Obstacle Avoidance**
-- Enhancing the **navigation system** to handle **moving obstacles** in the environment.
-
-#### **Multi-Robot Mapping**
-- Extending the system to support **collaborative mapping** with **multiple robots**.
-
-#### **Semantic Mapping**
-- Adding **object recognition** to create **maps with semantic information**.
-
-#### **Long-Term Autonomy**
-- Improving the system’s **robustness** for **extended operation periods**.
-
-#### **Outdoor Mapping**
-- Adapting the system for **outdoor environments** with **varying terrain and lighting conditions**.
-
----
+<br>
 
 ## **Code Repository**
 The complete code for this project is available in the **GitHub repository**:  
 [**GitHub Repository**](https://github.com/h-naderi/unitree-go2-slam-nav2-demo)
 
----
+<br>
 
 ## **Acknowledgements**
-This work was **inspired by the research** and **projects** of:
-
-- **[Nick Morales](https://ngmor.github.io)**
-- **[Roy Rahul](https://roy2909.github.io/)**
-
-Their **contributions** to the field of **robotic mapping and navigation** have been **invaluable** to the development of this project.
+This work was **inspired by  **projects** of **[Nick Morales](https://ngmor.github.io)** and [Roy Rahul](https://roy2909.github.io/)**. Their publicly available projects and supports have been **invaluable** to the development of this project.
