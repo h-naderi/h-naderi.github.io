@@ -1,7 +1,7 @@
 ---
 name: SLAM for Unitree Go2 Robot
 tools: [SLAM, ROS2, Sensor Fusion, RGB Depth Camera, 3D Point Data]
-image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-intro-1.gif?raw=true
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-intro.gif?raw=true
 description: Enabling SLAM on Unitree Go2 in two ways, with Lidar only, with infusion of Lidar and RGB Camera
 ---
 
@@ -16,7 +16,7 @@ The video below shows the successful implementation of the project.
 
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-lidar-1.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-rgb.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
 </div>
 <br>
 
@@ -47,7 +47,11 @@ The first step involved integrating the Lidar sensor with ROS2. We utilized the 
 
 After successful implementation, we could visualize the 3D point cloud data in RViz:
 
-![Point Cloud Data in RViz](placeholder-for-pointcloud-image.jpg)
+<br>
+The image below shows the 3D data publishing in rslidar topic:
+
+<center><img src="{{ site.url }}{{ site.baseurl }}/assets/2-point-cloud.png"/></center>
+<br>
 
 For future integration steps, it's important to note the frame_id and topics used by the SDK to publish 3D data:
 
@@ -92,7 +96,12 @@ The **launch file** implements several important **nodes**:
   - Establishes the transformation between the **base_link** (robot base) and **base_laser** (LiDAR sensor).  
   - The `-0.2` value in the **z-axis** accounts for the height difference between the **robot’s base** and the **mounted LiDAR sensor**.
 
-Note: the video in the overview section, is after running this launch file in mapping mode in the lab environment.
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-lidar-1.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+</div>
+<br>
+
 
 ---
 
@@ -111,9 +120,14 @@ To improve **mapping accuracy** and enable **automatic loop closure detection**,
 
 
 
-[Insert Image Here]
-
 <br>
+Note: the video in the overview section, is after running this launch file in mapping mode in the lab environment.
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-rgb.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+</div>
+<br>
+
 
 
 ## **Future Work**
