@@ -42,7 +42,7 @@ The system uses **MediaPipe** to detect and analyze hand gestures. Each frame fr
 <br>
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe src="https://www.youtube.com/watch?v=-5frhPR1_o4" 
+    <iframe src="https://www.youtube.com/embed/-5frhPR1_o4" 
             frameborder="0" allowfullscreen
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
     </iframe>
