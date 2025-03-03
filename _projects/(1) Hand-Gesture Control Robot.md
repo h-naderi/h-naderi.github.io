@@ -41,8 +41,11 @@ The system follows these steps:
 The system uses **MediaPipe** to detect and analyze hand gestures. Each frame from the robot’s front camera is processed in real-time to identify hand landmarks and classify gestures.
 <br>
 <br>
-<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-front-camera.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://youtu.be/-5frhPR1_o4" 
+            frameborder="0" allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
 </div>
 <br>
 <br>
@@ -56,10 +59,11 @@ The gesture recognition model specifically detects the position of the **thumb**
 ## **Real-Time Testing**
 The following video demonstrates the system in action, where the robot responds to hand gestures in real time.
 <br>
-<br>
-
-<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-3PersonView.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube.com/embed/hJjrWiqMabM" 
+            frameborder="0" allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
 </div>
 <br>
 <br>
