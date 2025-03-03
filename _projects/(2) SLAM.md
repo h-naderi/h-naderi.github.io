@@ -7,30 +7,39 @@ description: Enabling SLAM on Unitree Go2 in two ways, with Lidar only, with inf
 
 # SLAM Implementation on Unitree Go2 Robot
 
-## Introduction
+## **Overview**
 
-Simultaneous Localization and Mapping (SLAM) is a foundational step in robot development, enabling robots to understand their position in an unknown environment while simultaneously building a map of that environment. This capability is essential for developing more complex robotic behaviors and applications.
-
-This project focused on implementing SLAM on Unitree Go2 robots using ROS2 and the RTAB-Map package. We successfully activated SLAM in two different configurations:
+This project focused on implementing SLAM on Unitree Go2 robots using ROS2 and the RTAB-Map package. It was a foundational step as it allows for developing more complex robotic applications. SLAM is successfully activated in two different configurations:
 1. Using Lidar data only
-2. Using a fusion of Lidar and RGB-Camera data for enhanced accuracy
+2. Using a fusion of Lidar and RGB-Camera.
+The video below shows the successful implementation of the project.
 
-![Unitree Go2 Robot Running SLAM](placeholder-for-video-thumbnail.jpg)
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-lidar.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+</div>
+<br>
 
-## Hardware Configuration
+## **Hardware Configuration**
 
 The robot platform used for this project consists of:
 - **Unitree Go2 Edu** equipped with an NVIDIA Jetson Nano
 - **RoboSense RS-Helios-32** Lidar sensor for 3D point cloud generation
 - **Intel RealSense D435i** RGB-D camera for visual data
 
-## Software Environment
+<br>
+The image below shows the robot and its attachments.
+
+<center><img src="{{ site.url }}{{ site.baseurl }}/assets/2-robot-arch.png"/></center>
+<br>
+
+## **Software Environment**
 
 SLAM implementation was tested and verified on:
 - ROS2 Foxy
 - Ubuntu 20.04 LTS
 
-## Implementation Process
+## **Implementation Process**
 
 ### 1. Activating Lidar Data
 
