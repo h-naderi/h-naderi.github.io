@@ -124,7 +124,7 @@ To improve **mapping accuracy** and enable **automatic loop closure detection**,
 Note: the video in the overview section, is after running this launch file in mapping mode in the lab environment.
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-rgb.mp4?raw=true" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+    <center><video src="https://user-images.githubusercontent.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-lidar-1.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
 </div>
 <br>
 

@@ -10,8 +10,11 @@ description: Controling the Unitree Go2 robot via hand gestures.
 ## **Description**
 This project enables gesture-based control of the Unitree Go2 quadruped robot using a Python interface. The system leverages MediaPipe for real-time hand gesture recognition and OpenCV for image processing. The recognized gestures are used to command the robot to stand up or stand down, providing an intuitive and efficient way to interact with the robot.
 
-<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-hand-gesture-3PersonView.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube.com/embed/hJjrWiqMabM" 
+            frameborder="0" allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
 </div>
 <br>
 
