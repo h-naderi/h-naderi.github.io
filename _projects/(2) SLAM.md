@@ -1,7 +1,7 @@
 ---
 name: SLAM for Unitree Go2 Robot
 tools: [SLAM, ROS2, Sensor Fusion, RGB Depth Camera, 3D Point Data]
-image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-intro.gif?raw=true
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/2-slam-intro-1.gif?raw=true
 description: Enabling SLAM on Unitree Go2 in two ways, with Lidar only, with infusion of Lidar and RGB Camera
 ---
 
