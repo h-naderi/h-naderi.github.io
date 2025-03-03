@@ -16,7 +16,7 @@ The video below shows the successful implementation of the project.
 
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-lidar.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
+    <center><video src="{{ site.url }}{{ site.baseurl }}/assets/1-slam-lidar-1.mp4" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
 </div>
 <br>
 
