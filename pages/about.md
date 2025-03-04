@@ -15,12 +15,12 @@ Hi, I am **Hossein** :wave:
 <br>
 
 <p align="center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/2-robot-arch.png" alt="Robot Architecture" width="60%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/0-aboutme.png" alt="Robot Architecture" width="70%">
 </p>
 
 <br>
 
-I am a PhD Candidate and at the same time a CS master student at **Virginia Tech** and a passionate researcher in **Robotics and AI**. My research focuses on enhancing robot autonomy in unstructured environments, especially construction jobsites, through AI-driven solutions. 
+I am a PhD Candidate and at the same time a CS master student at $${\color[HTML]{861F41}Virginia \space Tech}$$ and a passionate researcher in **Robotics and AI**. My research focuses on enhancing robot autonomy in unstructured environments, especially construction jobsites, through AI-driven solutions. 
 
 My ultimate goal? Bridging the gap between human-level thinking, dexterity, and adaptability in robotics, enabling robots to take on dangerous tasks in real-world construction environments. To achieve this, I explore foundation models, particularly: Vision-Language Models (VLMs), Large Language Models (LLMs), and Multi-AI Agent Systems.
 
