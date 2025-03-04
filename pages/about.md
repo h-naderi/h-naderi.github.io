@@ -55,7 +55,6 @@ When I’m not working with robots, you’ll probably find me:
 
 Let's push the boundaries of robotics together! 🤖✨
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
