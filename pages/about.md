@@ -15,7 +15,7 @@ Hi, I am **Hossein** :wave:
 <br>
 
 <p align="center">
-  <img src="https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/0-aboutme.pdf?raw=true" alt="Me in New River Gorge National Park" width="60%">
+  <img src="https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/0-aboutme.jpeg?raw=true" alt="Me in New River Gorge National Park" width="50%">
 </p>
 
 <br>
