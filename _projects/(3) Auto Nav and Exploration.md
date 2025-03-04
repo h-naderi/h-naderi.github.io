@@ -28,7 +28,7 @@ The diagram below shows the building blocks of our system.
 ### **Project Architecture**
 <center><img src="{{ site.url }}{{ site.baseurl }}/assets/3-diagram.png"/></center>
 <br>
-Note: steps 1 and 2 are fully explained in the SLAM project page [see here] (https://h-naderi.github.io/projects/2-slam), this page explains the next steps from 3 to 5. 
+Note: steps 1 and 2 are fully explained in the SLAM project page ([see here](https://h-naderi.github.io/projects/2-slam)), this page explains the next steps from 3 to 5. 
 <br>
 
 ## **Hardware Configuration**
@@ -62,7 +62,7 @@ In the previous project ([SLAM project page](https://h-naderi.github.io/projects
 - Avoid obstacles dynamically based on the costmaps.
 - Send velocity commands (`/cmd_vel`) for movement.
 
-Find the code for launch file, and configurations in the project Github Repository [click here] (https://github.com/h-naderi/unitree-go2-slam-nav2)
+Find the code for launch file, and configurations in the project Github Repository [click here](https://github.com/h-naderi/unitree-go2-slam-nav2)
 <br>
 
 Once Nav2 is successfully integrated, it publishes velocity commands on the `/cmd_vel` topic. The lifecycle manager in Nav2 initializes key navigation components such as:
@@ -91,7 +91,7 @@ The control node performs the following tasks:
 - Handles timeout conditions to stop the robot when no new commands are received.
 - Supports custom actions such as standing up, laying down, and dancing using Unitree’s API.
 
-Find the code for the node in the project Github Repository [click here] (https://github.com/h-naderi/unitree-go2-slam-nav2)
+Find the code for the node in the project Github Repository [click here](https://github.com/h-naderi/unitree-go2-slam-nav2)
 <br>
 
 
@@ -103,7 +103,7 @@ Note: the video in the overview shows the robot after this stage.
 
 ## **Dynamic Obstacle Avoidance**
 
-<br>
+
 
 In dynamic environments, the robot continuously updates its costmaps and navigation goals, adjusting its path to safely maneuver around obstacles. See the video below:
 
@@ -119,7 +119,7 @@ In dynamic environments, the robot continuously updates its costmaps and navigat
 
 ## **Exploration Node**
 
-<br>
+
 
 To enable autonomous exploration, a frontier-based exploration is utilized for this project. This node identifies unmapped areas (frontiers), selects the best frontier based on distance and exploration efficiency, and publishes a goal pose to Nav2 for autonomous movement.
 
@@ -128,7 +128,7 @@ To improve standard frontier-based exploration, we added following adjustment to
 - Intermediate goal planning to avoid small, inefficient movements.
 - Dynamic frontier filtering to ensure valid exploration targets.
 
-Find the code for the node in the project Github Repository [click here] (https://github.com/h-naderi/unitree-go2-slam-nav2)
+Find the code for the node in the project Github Repository [click here](https://github.com/h-naderi/unitree-go2-slam-nav2)
 <br>
 
 In another project, we went through different exploration nodes and study the behavior of them in a game-based environment in python. Take a look at this. a detailed breakdown of frontier exploration, see the [Exploration Project Page](https://h-naderi.github.io/projects/4-exploration-nodes).
@@ -139,4 +139,4 @@ The full project code, configurations are available at:
 
 
 ## **Acknowledgments**
-This project was inspired by the work of Nick Morales ([Website](https://ngmor.github.io)) and Roy Rahul ([Project Page](https://roy2909.github.io/Exploration/#autonomous-exploration-and-mapping)). Thanks to them for droping their code and knowledge online. This project wouldn't exist without their awesome work.
+This project was inspired by the work of [Nick Morales](https://ngmor.github.io) and [Roy Rahul](https://roy2909.github.io). Thanks to them for droping their code and knowledge online. This project wouldn't exist without their awesome work.
