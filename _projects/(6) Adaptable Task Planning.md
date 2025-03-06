@@ -2,7 +2,7 @@
 
 name: Adaptable Task Planning for Autonomous Robots
 tools: [Python, CrewAI, MiniCPM-7B, Llama3-8B, ROS2, Quadruped Robot, Ollama]
-image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/5-vlmdescription.png?raw=true
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/5-MultiAI.png?raw=true
 description: A study exploring multi-agent AI for zero-shot robot task planning in construction, enhancing adaptability and generalizability across dynamic tasks.
 
 ---
@@ -47,22 +47,11 @@ Three critical tasks representing diverse construction activities:
 | **Floor Tiling** | Craft        | Moderate-high variability     |  
 
 <br>
-![Robot in Painting Task](https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/6-painting.png?raw=true)
+![Robot in Painting Task](https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/6-Painting.jpeg?raw=true)
 
-## **Evaluation Metrics**
-<br>
 
-Systems evaluated based on five core metrics:
 
-- ✅ **Correctness**: Object usage accuracy, intention prediction, function relevance.
-- ⏳ **Temporal Understanding**: Sequencing of actions.
-- 🛠️ **Executability**: Practical execution without hallucinations.
-- 💲 **Cost**: Model usage costs per million tokens.
-- ⏱️ **Time**: Processing duration for task completion.
-
----
-
-## **Results & Findings**
+## **Selected Findings**
 <br>
 
 - One of the designs significantly outperformed other architectures and even **GPT-4o** across several metrics.
@@ -70,7 +59,7 @@ Systems evaluated based on five core metrics:
 
 
 
----
+
 
 ## **Contribution & Impact**
 <br>
