@@ -2,7 +2,7 @@
 
 name: Adaptable Task Planning for Autonomous Robots
 tools: [Python, CrewAI, MiniCPM-7B, Llama3-8B, ROS2, Quadruped Robot, Ollama]
-image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/5-MultiAI.png?raw=true
+image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/6-MultiAI.png?raw=true
 description: A study exploring multi-agent AI for zero-shot robot task planning in construction, enhancing adaptability and generalizability across dynamic tasks.
 
 ---
