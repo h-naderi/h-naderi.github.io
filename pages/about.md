@@ -20,11 +20,11 @@ Hi, I am **Hossein** :wave:
 
 <br>
 
-I am a PhD Candidate and at the same time a CS master student at \textcolor{#861F41}{Virginia \space Tech} and a passionate researcher in **Robotics and AI**. My research focuses on enhancing robot autonomy in unstructured environments, especially construction jobsites, through AI-driven solutions. 
+I am a PhD Candidate and concurrently pursuing a Master’s in Computer Science at Virginia Tech, with a strong passion for Robotics and AI. My research focuses on advancing robot autonomy in unstructured environments, particularly on construction jobsites, by leveraging AI-driven solutions.
 
-My ultimate goal? Bridging the gap between human-level thinking, dexterity, and adaptability in robotics, enabling robots to take on dangerous tasks in real-world construction environments. To achieve this, I explore foundation models, particularly: Vision-Language Models (VLMs), Large Language Models (LLMs), and Multi-AI Agent Systems.
+My ultimate goal is to bridge the gap between human-level reasoning, dexterity, and adaptability in robotics, empowering robots to take on hazardous tasks in real-world construction settings. To achieve this, I explore foundation models, with a particular emphasis on Vision-Language Models (VLMs), Large Language Models (LLMs), and Multi-AI Agent Systems.
 
-Throughout my research and development journey, I have honed my skills in:
+Throughout my research and development journey, I improved my skills in:
 - 🖥 Programming: C++, Python, Java  
 - 🤖 Robotics Frameworks: ROS2/ROS, Gazebo, MoveIt  
 - 🧠 AI & Machine Learning: TensorFlow, OpenCV, PyTorch, Transformers  
