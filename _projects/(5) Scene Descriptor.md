@@ -1,5 +1,5 @@
 ---
-name: Integration of VLM with the Unitree Go2 Edu
+name: Integration of VLM with Robot
 tools: [Python, VLM, OpenCV, ROS2, Ollama, MediaPipe, Unitree SDK, Llava-7b, Flask]
 image: https://github.com/h-naderi/h-naderi.github.io/blob/master/assets/5-vlmdescription.png?raw=true
 description: This project integrates a Vision-Language Model (VLM) with the Unitree Go2 Edu robot to generate real-time scene descriptions based on its camera feed.
