@@ -68,7 +68,7 @@ The following video demonstrates the system in action, where the robot responds 
 <br>
 <br>
 
-## **Code Overview**
+## **Code Overview1**
 The core functionality is implemented in Python, utilizing the `unitree_sdk2py` library to send movement commands to the Unitree Go2 robot. Below is a high-level breakdown of the code:
 
 - **Video Stream Processing**  
